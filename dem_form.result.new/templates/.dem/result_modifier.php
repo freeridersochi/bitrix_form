@@ -1,22 +1,19 @@
 <?
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
-?>
+?>  
 
 <?
-
-//проверяем на наличие значений в массиве $_POST
 if (sizeof($_POST) > 0 ){  
-   
-      //1. Create ditry array put Post result. Work with it post result. 
-      //2. Create clear array. 
 
       $postValues = array(
-         "form_text_22" => $_POST['form_text_22'],
-         "form_text_23" => $_POST['form_text_23'],
+         "form_text_1" => $_POST['form_text_1'],
+         "form_text_2" => $_POST['form_text_2'],
          "form_email_24" => $_POST['form_email_24'],
-         "form_text_25" => $_POST['form_text_25'],
-         "form_textarea_26" => $_POST['form_textarea_26']
+         "form_text_4" => $_POST['form_text_4'],
+         "form_textarea_5" => $_POST['form_textarea_5']
       );
+
+      echo '///TODOO Fix send email data to admin'
 
       $postValues_clear=array();
 
@@ -26,9 +23,7 @@ if (sizeof($_POST) > 0 ){
          $postValues_clear[$key]=$input_text;
       }
 
-	//задаем ID нашей формы, можно глянуть в админке
-	$FORM_ID = 6;
-	//подключаем модуль форм, т.к. без него скорей всего будет ошибка
+	$FORM_ID = $arResult["QUESTIONS"]["SIMPLE_QUESTION_142"]["STRUCTURE"][0]["ID"]; //1
 	CModule::IncludeModule("form");
 	
 	// создадим новый результат

@@ -3,6 +3,7 @@
 <?endif;?>
 
 <div class="contact-form">
+
     <!-- Form title -->
     <div class="contact-form__head">
         <div class="contact-form__head-title">Связаться</div>
