@@ -15,7 +15,7 @@
                 <div class="input__label-text">Ваше имя*</div>
                 <input class="input__input" type="text" 
                         id="medicine_name" 
-                        name="form_text_22" 
+                        name="form_text_6" 
                         value=""
                         required="">
                 <div class="input__notification">Поле должно содержать не менее 3-х символов</div>
@@ -28,7 +28,7 @@
                     <input class="input__input" 
                             type="text" 
                             id="medicine_company" 
-                            name="form_text_23"
+                            name="form_text_7"
                             value=""
                             required="">
                     <div class="input__notification">Поле должно содержать не менее 3-х символов</div>
@@ -41,7 +41,7 @@
                 <input class="input__input" 
                         type="email" 
                         id="medicine_email" 
-                        name="form_email_24" 
+                        name="form_email_8" 
                         value=""
                        required="">
                     <div class="input__notification">Неверный формат почты</div>
@@ -52,7 +52,7 @@
                 <label class="input__label" for="medicine_phone">
                 <div class="input__label-text">Номер телефона*</div>
                 <input class="input__input"
-                        name="form_text_25"
+                        name="form_text_9"
                         type="tel" 
                         id="medicine_phone"
                         data-inputmask="'mask': '+79999999999', 'clearIncomplete': 'true'"
@@ -71,7 +71,7 @@
                 <textarea class="input__input" 
                             type="text" 
                             id="medicine_message" 
-                            name="form_textarea_26"
+                            name="form_textarea_10"
                           value=""></textarea>
                 <div class="input__notification"></div>
             </label></div>
