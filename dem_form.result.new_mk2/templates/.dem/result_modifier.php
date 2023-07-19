@@ -3,7 +3,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
 ?>
 
 <? 
-//$this->addExternalCss("/local/components/d_form.result.new_fifth/templates/.dem/css/common.css");
+$this->addExternalCss("/local/components/dem_form.result.new_mk2/templates/.dem/css/common.css");
 ?>
    
 <?
