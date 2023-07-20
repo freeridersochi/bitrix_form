@@ -1,3 +1,23 @@
+<?
+    foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion){
+        if ($arQuestion["CAPTION"] == 'name'){
+            $name_id = $arQuestion['STRUCTURE'][0]["ID"];
+        }
+        if ($arQuestion["CAPTION"] == 'company'){
+            $company_id = $arQuestion['STRUCTURE'][0]["ID"];
+        }
+        if ($arQuestion["CAPTION"] == 'email'){
+            $email_id = $arQuestion['STRUCTURE'][0]["ID"];
+        }
+        if ($arQuestion["CAPTION"] == 'phone'){
+            $phone_id = $arQuestion['STRUCTURE'][0]["ID"];
+        }
+        if ($arQuestion["CAPTION"] == 'comment'){
+            $comment_id = $arQuestion['STRUCTURE'][0]["ID"];
+        }
+    }
+?>
+
 <div class="contact-form">
     <!-- Form title -->
     <div class="contact-form__head">
@@ -15,7 +35,7 @@
                 <div class="input__label-text">Ваше имя*</div>
                 <input class="input__input" type="text" 
                         id="medicine_name" 
-                        name="form_text_6" 
+                        name="form_text_<?=$name_id;?>" 
                         value=""
                         required="">
                 <div class="input__notification">Поле должно содержать не менее 3-х символов</div>
@@ -28,7 +48,7 @@
                     <input class="input__input" 
                             type="text" 
                             id="medicine_company" 
-                            name="form_text_7"
+                            name="form_text_<?=$company_id;?>"
                             value=""
                             required="">
                     <div class="input__notification">Поле должно содержать не менее 3-х символов</div>
@@ -41,7 +61,7 @@
                 <input class="input__input" 
                         type="email" 
                         id="medicine_email" 
-                        name="form_email_8" 
+                        name="form_email_<?=$email_id;?>"
                         value=""
                        required="">
                     <div class="input__notification">Неверный формат почты</div>
@@ -52,7 +72,7 @@
                 <label class="input__label" for="medicine_phone">
                 <div class="input__label-text">Номер телефона*</div>
                 <input class="input__input"
-                        name="form_text_9"
+                        name="form_text_<?=$phone_id;?>"
                         type="tel" 
                         id="medicine_phone"
                         data-inputmask="'mask': '+79999999999', 'clearIncomplete': 'true'"
@@ -71,7 +91,7 @@
                 <textarea class="input__input" 
                             type="text" 
                             id="medicine_message" 
-                            name="form_textarea_10"
+                            name="form_textarea_<?=$comment_id;?>"
                           value=""></textarea>
                 <div class="input__notification"></div>
             </label></div>
