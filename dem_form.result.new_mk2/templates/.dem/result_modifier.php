@@ -1,6 +1,24 @@
 <?
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
 
+foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion){
+    if ($arQuestion["CAPTION"] == 'name'){
+        $name_id = $arQuestion['STRUCTURE'][0]["ID"];
+    }
+    if ($arQuestion["CAPTION"] == 'company'){
+        $company_id = $arQuestion['STRUCTURE'][0]["ID"];
+    }
+    if ($arQuestion["CAPTION"] == 'email'){
+        $email_id = $arQuestion['STRUCTURE'][0]["ID"];
+    }
+    if ($arQuestion["CAPTION"] == 'phone'){
+        $phone_id = $arQuestion['STRUCTURE'][0]["ID"];
+    }
+    if ($arQuestion["CAPTION"] == 'comment'){
+        $comment_id = $arQuestion['STRUCTURE'][0]["ID"];
+    }
+}
+
 $this->addExternalCss("/local/components/dem_form.result.new_mk2/templates/.dem/css/common.css");
 
 $post_clear = array();

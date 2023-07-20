@@ -1,21 +1,5 @@
 <?
-    foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion){
-        if ($arQuestion["CAPTION"] == 'name'){
-            $name_id = $arQuestion['STRUCTURE'][0]["ID"];
-        }
-        if ($arQuestion["CAPTION"] == 'company'){
-            $company_id = $arQuestion['STRUCTURE'][0]["ID"];
-        }
-        if ($arQuestion["CAPTION"] == 'email'){
-            $email_id = $arQuestion['STRUCTURE'][0]["ID"];
-        }
-        if ($arQuestion["CAPTION"] == 'phone'){
-            $phone_id = $arQuestion['STRUCTURE'][0]["ID"];
-        }
-        if ($arQuestion["CAPTION"] == 'comment'){
-            $comment_id = $arQuestion['STRUCTURE'][0]["ID"];
-        }
-    }
+require($_SERVER["DOCUMENT_ROOT"]."/local/components/dem_form.result.new_mk2/templates/.dem/result_modifier.php");
 ?>
 
 <div class="contact-form">
